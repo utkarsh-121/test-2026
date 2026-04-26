@@ -5,3 +5,8 @@ aws_instance.web  {
       Name = "WebServer"
     }
   }
+
+  this is & adnf data local_file name {
+    filename = "${path.module}/"
+  }
+  
