@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    tools {
+        // These names must match your Global Tool Configuration
+        maven 'Maven_3.9.6'
+    }
     environment {
         VERSION = '2.1.0'
         RELEASE_VERSION = 'R.2'
