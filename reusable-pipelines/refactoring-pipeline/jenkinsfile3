@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    tools {
+        // These names must match your Global Tool Configuration
+        maven 'Maven_3.9.15'
+    }
 
     parameters {
         booleanParam(name: 'RELEASE', defaultValue: false, description: 'Is this a Release Candidate?')
